@@ -1,0 +1,40 @@
+/*
+=================================================
+                    Variables
+=================================================*/
+/*
+=================================================
+                    ICONS
+=================================================*/
+.header {
+  width: 100%;
+  height: 150px; }
+  .header__logo {
+    width: 100%;
+    height: inherit; }
+  .header__logoimg {
+    position: absolute;
+    left: 25%;
+    top: 3.5%;
+    display: inline-block;
+    vertical-align: middle; }
+  .header__social-icon {
+    position: relative;
+    display: block;
+    bottom: 85%;
+    left: 70%;
+    width: 120px;
+    height: 70px; }
+    .header__social-icon__fb {
+      position: relative;
+      left: 50px;
+      display: block;
+      background: url(../images/fb-icon.png) no-repeat;
+      height: 100px; }
+    .header__social-icon h1 {
+      width: 130px;
+      font-size: 14px;
+      text-align: center;
+      font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
