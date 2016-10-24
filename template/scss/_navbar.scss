@@ -5,16 +5,23 @@
 }
 
 .navbar{
-    width: 100%;
+    width: auto;
     background: url(#{$bg-navlink}) repeat-x;
-    //background-color: $bg-nav;
     font-size: $text-size;
     font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: -1px;
+    padding: 0;
 }
+
+/*.nav-center{
+    position: absolute;
+    left: 25%;
+}*/
 
 .nav-center{
     position: absolute;
-    left: 24.5%;
+    left: 30%;
 }
 
 .navbar-nav{

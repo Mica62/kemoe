@@ -1,0 +1,13 @@
+.slider{
+    width: auto;
+    height: 420px;
+    padding: 0px;
+    margin: 0px;
+    
+    &__img{
+        width: 1921px;
+        height: inherit;
+        position: relative;
+        bottom: 1px;
+    }
+}

@@ -1,3 +1,13 @@
 @import "variable";
 @import "header";
 @import "navbar";
+@import "slider";
+@import "content";
+@import "footer";
+
+html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+    margin: 0px !important;;
+    padding: 0px !important;;
+}
