@@ -1,4 +1,83 @@
 .content{
     width: 70%;
-    height: auto;
+    height: 800px;
+}
+
+.news{
+    position: relative;
+    width: inherit;
+    height: $news-height;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    
+    
+    &__icon{
+        color: blue;
+    }
+    
+    &__maintitle{
+        position: relative;
+        left: 15%;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    
+    &__block{
+        display: block;
+        width: 50%;
+        height: 150px;
+        position: relative;
+        left: 0%;
+        top: 5%;
+        padding: 5px;
+    }
+    
+    &__currentnews{
+        position: relative;
+        left: 1%;
+        top: 8%;
+        display: block;
+        float: left;
+        width: 85%;
+        height: auto;
+        border-left: 1px solid black;
+        padding-left: 10px;
+    }
+    
+    &__news-title{
+        position: relative;
+        float: left;
+        font-weight: bold;
+        font-size: 18px;
+        color: gray;
+    }
+    
+    &__news-content{
+        clear: both;
+        position: relative;
+        width: auto;
+        text-align: left;
+    }
+    
+    &__date{
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        font-size: 12px;
+        top: 3px;
+        
+        &__top{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        &__bottom{
+            position: absolute;
+            left: 15%;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    }
 }
