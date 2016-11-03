@@ -6,6 +6,10 @@
 =================================================
                     ICONS
 =================================================*/
+/*
+=================================================
+                    Colors
+=================================================*/
 .header {
   width: 100%;
   height: 150px;
@@ -62,6 +66,8 @@
 
 .nav li a {
   color: white !important; }
+.nav li a:hover {
+  background-color: blue  !important; }
 
 .navbar {
   width: auto;
@@ -137,26 +143,31 @@
 
 .content {
   width: 70%;
-  height: 800px; }
+  height: 1000px;
+  font-size: 16px;
+  padding-top: 20px; }
 
 .news {
   position: relative;
-  width: inherit;
-  height: 450px;
+  left: 15%;
+  height: 550px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px; }
+  padding: 25px; }
   .news__icon {
-    color: blue; }
+    color: blue;
+    vertical-align: middle; }
   .news__maintitle {
     position: relative;
-    left: 15%;
-    font-size: 22px;
-    font-weight: bold; }
+    left: 12%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0B4C5F; }
   .news__block {
+    clear: both;
     display: block;
     width: 50%;
-    height: 150px;
+    height: auto;
     position: relative;
     left: 0%;
     top: 5%;
@@ -176,7 +187,7 @@
     float: left;
     font-weight: bold;
     font-size: 18px;
-    color: gray; }
+    color: #0B4C5F; }
   .news__news-content {
     clear: both;
     position: relative;
@@ -198,6 +209,88 @@
       font-weight: bold;
       color: blue; }
 
+.sidebar {
+  position: relative;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px; }
+  .sidebar__stop {
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px; }
+  .sidebar__sbottom {
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px; }
+    .sidebar__sbottom a {
+      color: blue;
+      font-weight: bold; }
+  .sidebar__title1 {
+    position: relative;
+    font-weight: bold;
+    color: #0B4C5F;
+    font-size: 24px;
+    right: 8%; }
+  .sidebar__title2 {
+    position: relative;
+    font-weight: bold;
+    color: #0B4C5F;
+    font-size: 24px;
+    right: 8%; }
+  .sidebar__icon {
+    color: blue;
+    float: left;
+    position: relative;
+    padding-right: 5px;
+    font-size: 10px;
+    vertical-align: middle; }
+  .sidebar__top-car-hr, .sidebar__bottom-car-hr {
+    position: relative;
+    right: 28.5%;
+    width: 75%;
+    border: none;
+    height: 1px;
+    background-color: black; }
+  .sidebar__top-car-hr {
+    bottom: 2%; }
+  .sidebar__bottom-car-hr {
+    bottom: 4%; }
+  .sidebar__car-date {
+    position: relative;
+    right: 8%;
+    bottom: 3%; }
+  .sidebar__car {
+    position: relative;
+    right: 15%;
+    bottom: 5%; }
+    .sidebar__car .col-md-4 {
+      font-weight: bold;
+      font-size: 14px; }
+    .sidebar__car__size1 {
+      width: 23.5%; }
+    .sidebar__car__size2 {
+      width: 29%; }
+  .sidebar__car-numbers {
+    position: relative;
+    right: 8%;
+    bottom: 3%;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px; }
+    .sidebar__car-numbers__size1 {
+      width: 24.5%; }
+    .sidebar__car-numbers__size2 {
+      width: 28%; }
+  .sidebar__btn-taux {
+    position: relative;
+    right: 7%; }
+
+.territoire {
+  position: relative;
+  left: 23%;
+  padding-top: 15px; }
+
 .footer {
   position: relative;
   width: 100%;
@@ -214,9 +307,32 @@
     margin: auto;
     transform: translate(-50%, -50%); }
 
+.btn-outline {
+  background: none;
+  padding: 12px 22px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: block;
+  width: 225px; }
+
+.btn-primary-outline {
+  border: 2px solid blue;
+  color: #0099cc; }
+
+.btn-primary-outline:hover, .btn-primary-outline:focus, .btn-primary-outline:active, .btn-primary-outline.active, .open > .dropdown-toggle.btn-primary {
+  color: white;
+  background: blue;
+  border-color: blue; }
+
+.btn-primary-outline:active, .btn-primary-outline.active {
+  border-color: #007299;
+  color: white;
+  box-shadow: none; }
+
 html, body {
   width: auto !important;
-  overflow-x: hidden !important;
   margin: 0px !important;
   padding: 0px !important; }
 

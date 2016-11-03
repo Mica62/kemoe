@@ -1,7 +1,10 @@
 .nav{
     li{
         a{ color: $link-nav !important; }
+        
+        a:hover{ background-color: blue  !important; }
     }
+    
 }
 
 .navbar{

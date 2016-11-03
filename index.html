@@ -25,12 +25,14 @@
 
     <!-- HEADER -->
     <div class="header container-fluid">
+       <div class="row">
         <div class="header__logo">
             <a href="index.html"><img class="header__logoimg" src="template/images/logokemoe.jpg"/></a>
         </div>
         <div class="header__social-icon">
             <h1>Suivez-nous</h1>
             <a href="https://www.facebook.com/Kmoe-transport-439988969447579/" class="header__social-icon__fb" target="_blank"></a>
+        </div>
         </div>
     </div>
     <!-- /.container -->
@@ -67,50 +69,81 @@
     </div>
     
     <div class="content container">
-        <div class="news">
-            <i class="news__maintitle"><i class="fa fa-newspaper-o news__icon"></i> Nouvelles</i>
-            
-            <div class="news__block">
-                <div class="news__date">
-                    <i class="news__date__top">Oct</i><br>
-                    <i class="news__date__bottom">24</i>
-                </div>
-                <div class="news__currentnews">
-                    <div class="news__news-title"><i>Premiere nouvelle</i></div><br>
-                    <p class="news__news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Odit doloremque ex, hic ipsum laboriosam? Libero suscipit optio quis quos nulla esse dignissimos laborum 
-                    non reiciendis earum illum mollitia sit, temporibus.</p>
-                </div>
-            </div>
-            
-            <div class="news__block">
-                <div class="news__date">
-                    <i class="news__date__top">Oct</i><br>
-                    <i class="news__date__bottom">25</i>
-                </div>
-                <div class="news__currentnews">
-                    <div class="news__news-title"><i>Deuxieme nouvelle</i></div><br>
-                    <p class="news__news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Odit doloremque ex, hic ipsum laboriosam? non reiciendis earum illum mollitia sit, temporibus.</p>
-                </div>
-            </div>
-            
-            <div class="news__block">
-                <div class="news__date">
-                    <i class="news__date__top">Oct</i><br>
-                    <i class="news__date__bottom">26</i>
-                </div>
-                <div class="news__currentnews">
-                    <div class="news__news-title"><i>Troisieme nouvelle</i></div><br>
-                    <p class="news__news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+       <div class="row">
+           <div class="news col-md-8">
+                <i class="news__maintitle"><i class="fa fa-newspaper-o fa-2x news__icon"></i> Nouvelles</i>
+
+                <div class="news__block">
+                    <div class="news__date">
+                        <i class="news__date__top">Oct</i><br>
+                        <i class="news__date__bottom">24</i>
+                    </div>
+                    <div class="news__currentnews">
+                        <div class="news__news-title"><i>Premiere nouvelle</i></div><br>
+                        <p class="news__news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Odit doloremque ex, hic ipsum laboriosam? Libero suscipit optio quis quos nulla esse dignissimos laborum 
                         non reiciendis earum illum mollitia sit, temporibus.</p>
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__date">
+                        <i class="news__date__top">Oct</i><br>
+                        <i class="news__date__bottom">25</i>
+                    </div>
+                    <div class="news__currentnews">
+                        <div class="news__news-title"><i>Deuxieme nouvelle</i></div><br>
+                        <p class="news__news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Odit doloremque ex, hic ipsum laboriosam? non reiciendis earum illum mollitia sit, temporibus.</p>
+                    </div>
+                </div>
+
+                <div class="news__block">
+                    <div class="news__date">
+                        <i class="news__date__top">Oct</i><br>
+                        <i class="news__date__bottom">26</i>
+                    </div>
+                    <div class="news__currentnews">
+                        <div class="news__news-title"><i>Troisieme nouvelle</i></div><br>
+                        <p class="news__news-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Odit doloremque ex, hic ipsum laboriosam? Libero suscipit optio quis quos nulla esse dignissimos laborum 
+                            non reiciendis earum illum mollitia sit, temporibus.</p>
+                    </div>
                 </div>
             </div>
-       
+            
+           <div class="sidebar col-md-4">
+               <div class="sidebar__stop">
+                   <i class="sidebar__title1"><i class="fa fa-tachometer fa-2x sidebar__icon" aria-hidden="true"></i> &nbsp;Surcharge<br>de carburant</i>
+                   <hr class="sidebar__top-car-hr">
+                   <p class="sidebar__car-date">En vigeur le: <b>10 octobre 2016</b></p>
+                   <hr class="sidebar__bottom-car-hr">
+                   <div class="sidebar__car row">
+                       <div class="sidebar__car__size1 col-md-4">Moins de 10 000 lbs</div>
+                       <div class="sidebar__car__size2 col-md-4">De 10 000 lbs à 54 999 lbs</div>
+                       <div class="sidebar__car__size1 col-md-4">Plus de 55 000 lbs</div>
+                   </div>
+
+                   <div class="sidebar__car-numbers row">
+                       <div class="sidebar__car-numbers__size1 col-md-4">5</div>
+                       <div class="sidebar__car-numbers__size2 col-md-4">5</div>
+                       <div class="sidebar__car-numbers__size1 col-md-4">5</div>
+                   </div>
+               </div>
+               
+               <div class="sidebar__sbottom">
+                   <i class="sidebar__title2"><i class="fa fa-link fa-2x sidebar__icon" aria-hidden="true"></i>&nbsp; Liens utiles</i>
+                   <hr class="sidebar__top-car-hr">
+                   <a href="#" class="sidebar__btn-taux btn-outline btn-primary-outline" role="button"><i class="fa fa-usd" aria-hidden="true"></i> Demande de taux</a>
+               </div>
+           </div>
+        </div>
+        <div class="territoire">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1h6czWBR8rm88RbD-QPy3A6psiiU" width="800" height="340"></iframe>
         </div>
     </div>
     
+  
     <div class="footer container-fluid">
         <p>Copyright Kemoe Transport</p>
     </div>
