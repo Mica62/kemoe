@@ -1,6 +1,219 @@
 .content{
     width: 70%;
-    height: 1000px;
+    //height: 1000px;
+    height: auto;
+    font-size: 16px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.news{
+    position: relative;
+    left: 15%;
+    height: $content-height;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width: 100%;
+
+
+    &__icon{
+        color: blue;
+        vertical-align: middle;
+    }
+
+    &__maintitle{
+        position: relative;
+        left: 2%;
+        font-size: $news-maintitle;
+        font-weight: bold;
+        color: $dark-blue;
+    }
+
+    &__block{
+        display: block;
+        width: 400px;
+        position: relative;
+        height: 160px;
+        top: 5%;
+        padding: 5px;
+    }
+
+    &__currentnews{
+        position: relative;
+        left: 1%;
+        display: block;
+        float: left;
+        width: 50%;
+        height: auto;
+        padding-left: 10px;
+        overflow: hidden;
+    }
+
+    &__news{
+        clear: both;
+        position: relative;
+        left: 3%;
+        top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__news-title{
+        position: relative;
+        float: left;
+        font-weight: bold;
+        font-size: 18px;
+        color: $dark-blue;
+    }
+
+    &__news-content{
+        clear: both;
+        position: relative;
+        width: auto;
+        text-align: left;
+    }
+
+    &__date{
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        top: 15px;
+
+        &__bottom{
+            position: absolute;
+            left: 15%;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    }
+}
+
+.sidebar{
+    position: relative;
+    height: $content-height;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    left: 50%;
+
+    &__stop{
+        width: 100%;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    &__sbottom{
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+
+        a{
+            color: blue;
+            font-weight: bold;
+        }
+    }
+
+    &__title1{
+        position: relative;
+        font-weight: bold;
+        color: $dark-blue;
+        font-size: $news-maintitle;
+    }
+
+    &__title2{
+        position: relative;
+        font-weight: bold;
+        color: $dark-blue;
+        font-size: $news-maintitle;
+    }
+
+    &__icon{
+        color: blue;
+        float: left;
+        position: relative;
+        padding-right: 5px;
+        font-size: 10px;
+        vertical-align: middle;
+    }
+
+    &__top-car-hr,
+    &__bottom-car-hr{
+        position: relative;
+        right: 5%;
+        width: 75%;
+        border: none;
+        height: 1px;
+        background-color: black;
+    }
+
+    &__top-car-hr{ bottom: 2%; }
+
+    &__bottom-car-hr{ bottom: 4%; }
+
+    &__car-date{
+        position: relative;
+        bottom: 3%;
+        left: 2%;
+    }
+
+    &__car{
+        position: relative;
+        bottom: 5%;
+
+
+        .col-sm-4{
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        &__size1{
+            width: 23.5%;
+        }
+
+        &__size2{
+            width: 29%;
+        }
+    }
+
+    &__car-numbers{
+        clear: both;
+        position: relative;
+        bottom: 3%;
+        color: blue;
+        font-weight: bold;
+        font-size: 20px;
+
+        &__size1{
+            width: 24.5%;
+        }
+
+        &__size2{
+            width: 28%;
+        }
+    }
+
+    &__btn-taux{
+        position: relative;
+        right: 38%;
+    }
+}
+
+.territoire{
+    position: relative;
+
+}
+
+
+
+
+/*.content{
+    width: 70%;
+    height: auto;
+    //height: 1000px;
     font-size: 16px;
     padding-top: 20px;
 }
@@ -12,13 +225,13 @@
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
-    
-    
+
+
     &__icon{
         color: blue;
         vertical-align: middle;
     }
-    
+
     &__maintitle{
         position: relative;
         left: 12%;
@@ -26,7 +239,7 @@
         font-weight: bold;
         color: $dark-blue;
     }
-    
+
     &__block{
         clear: both;
         display: block;
@@ -37,7 +250,7 @@
         top: 5%;
         padding: 5px;
     }
-    
+
     &__currentnews{
         position: relative;
         left: 1%;
@@ -49,7 +262,7 @@
         border-left: 1px solid black;
         padding-left: 10px;
     }
-    
+
     &__news-title{
         position: relative;
         float: left;
@@ -57,26 +270,26 @@
         font-size: 18px;
         color: $dark-blue;
     }
-    
+
     &__news-content{
         clear: both;
         position: relative;
         width: auto;
         text-align: left;
     }
-    
+
     &__date{
         position: relative;
         float: left;
         margin-right: 10px;
         font-size: 12px;
         top: 3px;
-        
+
         &__top{
             font-size: 20px;
             font-weight: bold;
         }
-        
+
         &__bottom{
             position: absolute;
             left: 15%;
@@ -93,24 +306,24 @@
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
-    
+
     &__stop{
         width: 100%;
         height: auto;
         padding-bottom: 60px;
     }
-    
+
     &__sbottom{
         width: 100%;
         height: auto;
         padding-bottom: 40px;
-        
+
         a{
             color: blue;
             font-weight: bold;
         }
     }
-    
+
     &__title1{
         position: relative;
         font-weight: bold;
@@ -118,7 +331,7 @@
         font-size: $news-maintitle;
         right: 8%;
     }
-    
+
     &__title2{
         position: relative;
         font-weight: bold;
@@ -135,7 +348,7 @@
         font-size: 10px;
         vertical-align: middle;
     }
-    
+
     &__top-car-hr,
     &__bottom-car-hr{
         position: relative;
@@ -145,36 +358,36 @@
         height: 1px;
         background-color: black;
     }
-    
+
     &__top-car-hr{ bottom: 2%; }
-    
+
     &__bottom-car-hr{ bottom: 4%; }
-    
+
     &__car-date{
         position: relative;
         right: 8%;
         bottom: 3%;
     }
-    
+
     &__car{
         position: relative;
         right: 15%;
         bottom: 5%;
-        
+
         .col-md-4{
             font-weight: bold;
             font-size: 14px;
         }
-        
+
         &__size1{
             width: 23.5%;
         }
-        
+
         &__size2{
             width: 29%;
         }
     }
-    
+
     &__car-numbers{
         position: relative;
         right: 8%;
@@ -182,7 +395,7 @@
         color: blue;
         font-weight: bold;
         font-size: 20px;
-        
+
         &__size1{
             width: 24.5%;
         }
@@ -191,7 +404,7 @@
             width: 28%;
         }
     }
-    
+
     &__btn-taux{
         position: relative;
         right: 7%;
@@ -202,4 +415,4 @@
     position: relative;
     left: 23%;
     padding-top: 15px;
-}
+}*/

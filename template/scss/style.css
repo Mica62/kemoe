@@ -12,7 +12,16 @@
 =================================================*/
 .header {
   width: 100%;
-  height: 150px;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  /*    &__logoimg{
+          position: relative;
+          left: 25%;
+          top: 3.5%;
+          display: inline-block;
+          vertical-align: middle;
+      }*/
    /* &__social-icon{
         position: relative;
         display: block;
@@ -35,23 +44,46 @@
             text-align: center;
             font-weight: bold;
         }
-    }*/ }
+    }*/
+  /*     &__social-icon{
+      position: absolute;
+      display: block;
+      bottom: 90%;
+      left: 70%;
+      width: 120px;
+      height: 70px;
+  
+      &__fb{
+      position: relative;
+      left: 50px;
+      display: block;
+      background: url(../images/fb-icon.png) no-repeat;
+      height: 100px;
+  }
+  
+      h1{
+      width: 130px;
+      font-size: $text-size;
+      text-align: center;
+      font-weight: bold;
+      }
+  }*/ }
   .header__logo {
     width: 100%;
-    height: inherit; }
+    height: inherit;
+    position: relative;
+    right: 40px; }
   .header__logoimg {
-    position: absolute;
-    left: 25%;
-    top: 3.5%;
-    display: inline-block;
-    vertical-align: middle; }
+    position: relative;
+    left: 30%;
+    vertical-align: middle;
+    display: block; }
   .header__social-icon {
-    position: absolute;
+    position: relative;
     display: block;
-    bottom: 90%;
-    left: 70%;
     width: 120px;
-    height: 70px; }
+    height: 70px;
+    left: 80px; }
     .header__social-icon__fb {
       position: relative;
       left: 50px;
@@ -143,9 +175,10 @@
 
 .content {
   width: 70%;
-  height: 1000px;
+  height: auto;
   font-size: 16px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  overflow: hidden; }
 
 .news {
   position: relative;
@@ -153,35 +186,40 @@
   height: 550px;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px; }
+  padding-top: 25px;
+  width: 100%; }
   .news__icon {
     color: blue;
     vertical-align: middle; }
   .news__maintitle {
     position: relative;
-    left: 12%;
+    left: 2%;
     font-size: 24px;
     font-weight: bold;
     color: #0B4C5F; }
   .news__block {
-    clear: both;
     display: block;
-    width: 50%;
-    height: auto;
+    width: 400px;
     position: relative;
-    left: 0%;
+    height: 160px;
     top: 5%;
     padding: 5px; }
   .news__currentnews {
     position: relative;
     left: 1%;
-    top: 8%;
     display: block;
     float: left;
-    width: 85%;
+    width: 50%;
     height: auto;
-    border-left: 1px solid black;
-    padding-left: 10px; }
+    padding-left: 10px;
+    overflow: hidden; }
+  .news__news {
+    clear: both;
+    position: relative;
+    left: 3%;
+    top: 20px;
+    width: 100%;
+    height: auto; }
   .news__news-title {
     position: relative;
     float: left;
@@ -197,11 +235,9 @@
     position: relative;
     float: left;
     margin-right: 10px;
-    font-size: 12px;
-    top: 3px; }
-    .news__date__top {
-      font-size: 20px;
-      font-weight: bold; }
+    font-size: 20px;
+    font-weight: bold;
+    top: 15px; }
     .news__date__bottom {
       position: absolute;
       left: 15%;
@@ -214,7 +250,8 @@
   height: 550px;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px; }
+  padding-top: 25px;
+  left: 50%; }
   .sidebar__stop {
     width: 100%;
     height: auto;
@@ -230,14 +267,12 @@
     position: relative;
     font-weight: bold;
     color: #0B4C5F;
-    font-size: 24px;
-    right: 8%; }
+    font-size: 24px; }
   .sidebar__title2 {
     position: relative;
     font-weight: bold;
     color: #0B4C5F;
-    font-size: 24px;
-    right: 8%; }
+    font-size: 24px; }
   .sidebar__icon {
     color: blue;
     float: left;
@@ -247,7 +282,7 @@
     vertical-align: middle; }
   .sidebar__top-car-hr, .sidebar__bottom-car-hr {
     position: relative;
-    right: 28.5%;
+    right: 5%;
     width: 75%;
     border: none;
     height: 1px;
@@ -258,13 +293,12 @@
     bottom: 4%; }
   .sidebar__car-date {
     position: relative;
-    right: 8%;
-    bottom: 3%; }
+    bottom: 3%;
+    left: 2%; }
   .sidebar__car {
     position: relative;
-    right: 15%;
     bottom: 5%; }
-    .sidebar__car .col-md-4 {
+    .sidebar__car .col-sm-4 {
       font-weight: bold;
       font-size: 14px; }
     .sidebar__car__size1 {
@@ -272,8 +306,8 @@
     .sidebar__car__size2 {
       width: 29%; }
   .sidebar__car-numbers {
+    clear: both;
     position: relative;
-    right: 8%;
     bottom: 3%;
     color: blue;
     font-weight: bold;
@@ -284,13 +318,217 @@
       width: 28%; }
   .sidebar__btn-taux {
     position: relative;
-    right: 7%; }
+    right: 38%; }
 
 .territoire {
-  position: relative;
-  left: 23%;
-  padding-top: 15px; }
+  position: relative; }
 
+/*.content{
+    width: 70%;
+    height: auto;
+    //height: 1000px;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.news{
+    position: relative;
+    left: 15%;
+    height: $content-height;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+
+
+    &__icon{
+        color: blue;
+        vertical-align: middle;
+    }
+
+    &__maintitle{
+        position: relative;
+        left: 12%;
+        font-size: $news-maintitle;
+        font-weight: bold;
+        color: $dark-blue;
+    }
+
+    &__block{
+        clear: both;
+        display: block;
+        width: 50%;
+        height: auto;
+        position: relative;
+        left: 0%;
+        top: 5%;
+        padding: 5px;
+    }
+
+    &__currentnews{
+        position: relative;
+        left: 1%;
+        top: 8%;
+        display: block;
+        float: left;
+        width: 85%;
+        height: auto;
+        border-left: 1px solid black;
+        padding-left: 10px;
+    }
+
+    &__news-title{
+        position: relative;
+        float: left;
+        font-weight: bold;
+        font-size: 18px;
+        color: $dark-blue;
+    }
+
+    &__news-content{
+        clear: both;
+        position: relative;
+        width: auto;
+        text-align: left;
+    }
+
+    &__date{
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        font-size: 12px;
+        top: 3px;
+
+        &__top{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        &__bottom{
+            position: absolute;
+            left: 15%;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    }
+}
+
+.sidebar{
+    position: relative;
+    height: $content-height;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+
+    &__stop{
+        width: 100%;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    &__sbottom{
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+
+        a{
+            color: blue;
+            font-weight: bold;
+        }
+    }
+
+    &__title1{
+        position: relative;
+        font-weight: bold;
+        color: $dark-blue;
+        font-size: $news-maintitle;
+        right: 8%;
+    }
+
+    &__title2{
+        position: relative;
+        font-weight: bold;
+        color: $dark-blue;
+        font-size: $news-maintitle;
+        right: 8%;
+    }
+
+    &__icon{
+        color: blue;
+        float: left;
+        position: relative;
+        padding-right: 5px;
+        font-size: 10px;
+        vertical-align: middle;
+    }
+
+    &__top-car-hr,
+    &__bottom-car-hr{
+        position: relative;
+        right: 28.5%;
+        width: 75%;
+        border: none;
+        height: 1px;
+        background-color: black;
+    }
+
+    &__top-car-hr{ bottom: 2%; }
+
+    &__bottom-car-hr{ bottom: 4%; }
+
+    &__car-date{
+        position: relative;
+        right: 8%;
+        bottom: 3%;
+    }
+
+    &__car{
+        position: relative;
+        right: 15%;
+        bottom: 5%;
+
+        .col-md-4{
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        &__size1{
+            width: 23.5%;
+        }
+
+        &__size2{
+            width: 29%;
+        }
+    }
+
+    &__car-numbers{
+        position: relative;
+        right: 8%;
+        bottom: 3%;
+        color: blue;
+        font-weight: bold;
+        font-size: 20px;
+
+        &__size1{
+            width: 24.5%;
+        }
+
+        &__size2{
+            width: 28%;
+        }
+    }
+
+    &__btn-taux{
+        position: relative;
+        right: 7%;
+    }
+}
+
+.territoire{
+    position: relative;
+    left: 23%;
+    padding-top: 15px;
+}*/
 .footer {
   position: relative;
   width: 100%;
